@@ -67,8 +67,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPSecure = 'tls';
         $mail->SMTPAuth   = true;
         $mail->setLanguage('es');
-        $mail->Username   = '115670605@globalcertacademy.com';
-        $mail->Password   = 'H/991268854546ad';
+        $mail->Username   = 'correo5@g.com';
+        $mail->Password   = 'contraseña54546ad';
         $mail->Port       = 587;
 
         // Remitente y destinatario
