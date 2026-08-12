@@ -72,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port       = 587;
 
         // Remitente y destinatario
-        $mail->setFrom('115670605@globalcertacademy.com', 'Ana Yancy Aguilar');
+        $mail->setFrom('CORREO@.com', 'Ana Yancy Aguilar');
         $mail->addAddress('lic.anayancyaguilar@gmail.com', 'Ana Yancy Aguilar');
         $mail->Subject = 'Nuevo mensaje de contacto';
         $mail->Body    = "Nombre: $nombre\nEmail: $email\nTeléfono: $telefono\nMensaje: $mensaje_form";
