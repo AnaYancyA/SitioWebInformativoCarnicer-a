@@ -21,8 +21,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->CharSet = 'UTF-8';
         $mail->Host       = 'smtp.office365.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = '115670605@globalcertacademy.com';
-        $mail->Password   = 'H/991268854546ad';
+        $mail->Username   = 'CORREO@.COMm';
+        $mail->Password   = 'NDDDad';
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
