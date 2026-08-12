@@ -1,0 +1,42 @@
+/* Estilo general del acordeón del equipo */
+.equipo .accordion-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #42baf8; /* mismo color que el título de "somos" */
+    background-color: #fff; /* fondo blanco */
+    border: none; /* sin borde */
+    box-shadow: none; /* sin sombra */
+}
+
+.equipo .accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #42baf8; /* azul cuando está abierto */
+}
+
+.equipo .accordion-button:focus {
+    box-shadow: none;
+}
+
+.equipo .accordion-body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    color: #000; /* texto negro */
+    text-align: justify;
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+/* Opcional: separar cada item con un poco de margen */
+.equipo .accordion-item {
+    margin-bottom: 1rem;
+    border: none; /* sin borde */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+}
+
+/* Opcional: estilo del icono de colapso */
+.equipo .accordion-button::after {
+    filter: invert(0.5); /* icono un poco más visible */
+}

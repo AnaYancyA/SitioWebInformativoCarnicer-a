@@ -1,0 +1,39 @@
+<form id="formulariocontacto" action="../../public/enviarcontactoformulario.php" method="post">
+    <!-- Nombre -->
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required
+            oninvalid="this.setCustomValidity('Este campo es obligatorio')" oninput="this.setCustomValidity('')">
+    </div>
+
+    <!-- Correo electrónico -->
+    <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico <span class="text-danger">*</span></label>
+        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="ejemplo@gmail.com"
+            oninvalid="this.setCustomValidity('Ingrese un correo válido, ejemplo: ejemplo@gmail.com')"
+            oninput="this.setCustomValidity('')">
+        <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con nadie más.</div>
+    </div>
+
+    <!-- Teléfono -->
+    <div class="mb-3">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{8,15}"
+            placeholder="Ej: 88881234" title="Ingrese solo números, entre 8 y 15 dígitos"
+            oninvalid="this.setCustomValidity('Este campo es obligatorio o inválido')"
+            oninput="this.setCustomValidity('')">
+        <div class="form-text">Solo números, entre 8 y 15 dígitos.</div>
+    </div>
+
+    <!-- Mensaje -->
+    <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required
+            oninvalid="this.setCustomValidity('Este campo es obligatorio')"
+            oninput="this.setCustomValidity('')"></textarea>
+    </div>
+
+    <!-- Botón enviar -->
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>

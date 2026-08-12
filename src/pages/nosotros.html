@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los 3 Cochinitos - Nosotros</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="../styles/encabezado.css">
+    <link rel="stylesheet" href="../styles/carrusel.css">
+    <link rel="stylesheet" href="../styles/somosnosotros.css">
+    <link rel="stylesheet" href="../styles/equipo.css">
+    <link rel="stylesheet" href="../styles/piepagina.css">
+</head>
+<body>
+
+    <!-- Navbar modular -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Contenedor para el carrusel -->
+    <section class="container my-3">
+        <div id="carruselnosotros-placeholder"></div>
+    </section>
+
+    <!-- Sección "Historia" -->
+    <section class="container my-4">
+        <div id="somosnosotros-placeholder"></div>
+        </section>
+
+    <!-- Sección "Equipo" -->
+    <section class="container my-4">
+        <div id="equipo-placeholder"></div>
+    </section>
+
+    <!-- Pie de página -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Cargar componentes con rutas relativas -->
+    <script>
+    async function cargarComponentes() {
+        try {
+            // Navbar
+            const navResp = await fetch('../utility/encabezado.html');
+            const navHtml = await navResp.text();
+            document.getElementById('navbar-placeholder').innerHTML = navHtml;
+
+            // Carrusel específico para nosotros
+            const carResp = await fetch('../utility/carruselnosotros.html');
+            const carHtml = await carResp.text();
+            document.getElementById('carruselnosotros-placeholder').innerHTML = carHtml;
+
+            // Sección "somos"
+            const somosResp = await fetch('../utility/somosnosotros.html');
+            const somosHtml = await somosResp.text();
+            document.getElementById('somosnosotros-placeholder').innerHTML = somosHtml;
+
+            // Sección "equipo"
+            const equipoResp = await fetch('../utility/equipo.html');
+            const equipoHtml = await equipoResp.text();
+            document.getElementById('equipo-placeholder').innerHTML = equipoHtml;
+
+            // Pie de página
+            const footerResp = await fetch('../utility/piepaginanosotros.html');
+            const footerHtml = await footerResp.text();
+            document.getElementById('footer-placeholder').innerHTML = footerHtml;
+
+        } catch (err) {
+            console.error('Error cargando los componentes:', err);
+        }
+    }
+
+    cargarComponentes();
+</script>
+</body>
+</html>

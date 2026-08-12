@@ -1,0 +1,15 @@
+.carousel-item img {
+  height: 350px;           /* Ajusta según quieras más o menos alto */
+  object-fit: cover;       /* Mantiene proporción y recorta lo sobrante */
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}

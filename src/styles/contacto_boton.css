@@ -1,0 +1,20 @@
+.boton-container {
+    text-align: center; /* centra el botón horizontalmente */
+    margin: 1rem 0;
+}
+
+#boton_contacto {
+    background-color: #42baf8 !important; /* color del encabezado */
+    color: white !important;              /* texto blanco */
+    padding: 0.4rem 1rem;                 /* tamaño más pequeño */
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;                /* asegura que no ocupe todo el ancho */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#divBotonContacto{
+    text-align: center;    
+}

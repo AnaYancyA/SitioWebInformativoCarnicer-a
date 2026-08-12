@@ -1,0 +1,63 @@
+/* Contenedor de la card */
+.card {
+  border: 1px solid #ccc; /* borde suave */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  max-width: 300px; /* más pequeño de ancho */
+  margin: 0 auto 2rem; /* centrado horizontal y margen inferior */
+  height: 300px; /* mismo largo que el carrusel */
+  display: flex;
+  align-items: center; /* centra verticalmente */
+}
+
+/* Cuerpo de la card */
+.card-body {
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+  color: #000; /* letra negra */
+  padding: 1rem;
+}
+
+
+/* Texto del párrafo */
+.card-text {
+  text-align: justify;
+  font-size: 0.95rem; /* más pequeño */
+  line-height: 1.5;
+}
+
+/* Texto pequeño */
+.text-body-secondary {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #555 !important;
+}
+
+/* Imagen */
+.card img {
+  border-radius: 0 10px 10px 0;
+  object-fit: cover;
+  height: 100%;
+}
+
+/* Titulo de quienes somos */
+
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #42baf8; 
+  margin-bottom: 10px;
+  text-align: center; 
+  letter-spacing: 1px;
+}
+
+.somosclass {
+    border: none;
+    border-radius: 0px;
+    box-shadow: unset;
+}
+
+

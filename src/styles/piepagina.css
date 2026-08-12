@@ -1,0 +1,93 @@
+/* Pie de página compacto y centrado */
+.footer-custom {
+    background-color: #42baf8;   /* mismo azul del encabezado */
+    color: white;                
+    padding: 0.3rem 0.5rem;      /* menos alto y angosto */
+    display: flex;
+    flex-wrap: wrap;             
+    justify-content: space-between;
+    align-items: flex-start;     
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;           /* texto más pequeño */
+}
+
+/* Contenedor interno centrado y con ancho limitado */
+.footer-custom .footer-inner {
+    max-width: 500px;            /* ancho máximo reducido */
+    margin: 0 auto;              
+    width: 100%;                 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Columnas dentro del footer */
+.footer-custom .footer-column {
+    flex: 1;
+    margin: 0.2rem;
+    min-width: 100px;            /* columnas más estrechas */
+}
+
+/* Títulos de columna */
+.footer-custom .footer-title {
+    font-weight: 600;           /* seminegrita */
+    font-size: 1rem;            /* más pequeño */
+    margin-bottom: 0.2rem;
+}
+
+/* Enlaces del footer */
+.footer-custom a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.15rem;
+    font-size: 0.8rem;           /* enlaces más pequeños */
+}
+
+.footer-custom a:hover {
+    text-decoration: underline;
+}
+
+/* Iconos de redes sociales */
+.footer-custom .social-icon {
+    font-size: 0.9rem;           /* iconos más pequeños */
+    margin-right: 0.3rem;
+    color: white;
+}
+
+.footer-custom .social-icon:hover {
+    color: #cce7ff;
+}
+
+/* Derechos reservados */
+.footer-custom small {
+    font-size: 0.75rem;          /* texto de copyright más pequeño */
+    color: white;
+    display: block;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
+/* Ajuste en móviles */
+@media (max-width: 400px) {
+    .footer-custom .footer-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: #FF0000; /* mismo que encabezado */
+    color: white;
+    padding: 20px 0;  /* <-- Reduce aquí (20px arriba y abajo, 0 a los lados) */
+}
+
+footer h5 {
+    font-size: 1.3rem; /* más grande y en negrita */
+    font-weight: bold;
+}
+
+#PaginasInternas a, #EnlacesExternos a{
+    padding-right: 10px;
+}

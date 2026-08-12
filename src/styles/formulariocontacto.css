@@ -1,0 +1,22 @@
+.mensaje-exito {
+    border: 2px solid #42baf8; /* mismo color que el encabezado */
+    background-color: #42baf8; /* fondo igual al encabezado */
+    color: #fff; /* texto blanco */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.mensaje-error {
+    border: 2px solid #ff0000; /* rojo para error */
+    background-color: #ff0000; /* fondo rojo para error */
+    color: #fff; /* texto blanco */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.alert-success {
+    background-color: #42baf8;
+    color: white;
+    border: none;
+}

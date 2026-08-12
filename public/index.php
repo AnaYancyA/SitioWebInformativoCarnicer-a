@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los 3 Cochinitos - Inicio</title>
+
+    <!-- Bootstrap CSS vía CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="../src/styles/encabezado.css">
+    <link rel="stylesheet" href="../src/styles/carrusel.css">
+    <link rel="stylesheet" href="../src/styles/somos.css">
+    <link rel="stylesheet" href="../src/styles/contacto_boton.css">
+    <link rel="stylesheet" href="../src/styles/piepagina.css">
+</head>
+
+
+<body>
+
+    <!-- Navbar modular -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Contenedor para el carrusel -->
+    <section class="container my-3">
+       <div id="carrusel-placeholder"></div>
+    </section>
+
+    <!-- Sección "Quiénes somos" -->
+<section class="container my-4">
+  <div id="somos-placeholder"></div>
+</section>
+
+
+    <!-- Botón de contacto -->
+ <div id="divBotonContacto">
+    <a href="../src/pages/contacto.html" class="btn btn-primary">Contáctanos</a>
+</div>
+
+
+   </div>
+
+
+    
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+     <!-- Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   
+    <!-- Cargar navbar y carrusel -->
+    <script>
+        async function cargarComponentes() {
+            try {
+                // Cargar navbar
+                const navResp = await fetch('../src/utility/encabezadoindex.html');
+                const navHtml = await navResp.text();
+                document.getElementById('navbar-placeholder').innerHTML = navHtml;
+                
+
+                // Cargar carrusel
+                const carResp = await fetch('../src/utility/carrusel.html');
+                const carHtml = await carResp.text();
+                document.getElementById('carrusel-placeholder').innerHTML = carHtml;
+
+                 const somosResp = await fetch('../src/utility/somos.html');
+                 const somosHtml = await somosResp.text();
+                 document.getElementById('somos-placeholder').innerHTML = somosHtml;
+                 
+                 // Cargar pie de página
+                 const footerResp = await fetch('../src/utility/piepagina.html');
+                 const footerHtml = await footerResp.text();
+                 document.getElementById('footer-placeholder').innerHTML = footerHtml;
+
+
+            } catch (err) {
+                console.error('Error cargando los componentes:', err);
+            }
+        }
+
+        cargarComponentes();
+    </script>
+
+</body>
+</html>
